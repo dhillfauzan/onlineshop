@@ -8,13 +8,13 @@
                 <h5 class="card-title"> {{$judul}}</h5>
                 <div class="alert alert-success" role="alert">
                     <h4 class="alert-heading"> Selamat Datang, {{ Auth::user()->nama
-}}</h4>
-                    Aplikasi Toko Online dengan hak akses yang anda miliki sebagai
+                        }}</h4>
+                    Website Aplikasi Toko Online dengan hak akses yang anda miliki sebagai
                     <b>
                         @if (Auth::user()->role == 1)
-                            Super Admin
+                        Super Admin
                         @elseif(Auth::user()->role == 0)
-                            Admin
+                        Admin
                         @endif
                     </b>
                     ini adalah halaman utama dari aplikasi Web Programming. Studi Kasus
